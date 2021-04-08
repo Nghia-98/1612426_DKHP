@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>1612426 - Hoàng Nghĩa</title>
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1>Đăng kí môn học</h1>
+            </div>
+            <div class="row">
+                <form method="post" action="#">
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="maSo">Mã số</label>
+                        </div>
+                        <div class="col-8">
+                             <input type="number" id="maSo" name="maSo" placeholder="Mã số">
+                        </div>
+                    </div>
+     
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="hoTen">Họ tên</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="text" id="hoTen" name="hoTen" placeholder="Họ tên">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-4">
+                            <label>Giới tính</label>
+                        </div>
+                        <div class="col-8">
+                            <input type="radio" name="gioiTinh" id="nam" value="Nam">Nam
+                            <input type="radio" name="gioiTinh" id="nu" value="Nữ">Nữ
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-4">
+                             <label>Ngày sinh</label>
+                        </div>
+                        <div class="col-8">
+                            <div class="birth-date row">
+                                <div class="date">
+                                    <div>
+                                        <select id="date">
+                                            <script type="text/javascript">
+                                                for (var i = 1; i <= 31; i++) {
+                                                    var html = '<option value="' + i + '">' + i + '</option>';
+                                                        document.writeln(html);
+                                                }
+                                            </script>
+                                        </select>   
+                                    </div>
+                                </div>
+                                <div class="month">
+                                    <div>
+                                        <select id="month">
+                                            <script type="text/javascript">
+                                                for (var i = 1; i <= 12; i++) {
+                                                    var html = '<option value="' + i + '">' + i + '</option>';
+                                                        document.writeln(html);
+                                                }
+                                            </script>
+                                        </select> 
+                                    </div>
+                                </div>
+                                <div class="year">
+                                    <div>
+                                         <select id="year">
+                                            <script type="text/javascript">
+                                                for (var i = 1980; i <= 2019; i++) {
+                                                    var html = '<option value="' + i + '">' + i + '</option>';
+                                                        document.writeln(html);
+                                                }
+                                            </script>
+                                        <select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            
+                    <div>
+                        <div class="row">
+                            <div class="col-5">
+                                <label>Các môn học:</label>
+                                <div class="subjects">
+                                    <!--
+                                    <div class="item" id="sub-1">
+                                        <p>Phát triển ứng dụng Web</p>
+                                    </div>
+                                    <div class="item" id="sub-2">
+                                        <p>Chuyên đề Java</p>
+                                    </div>
+                                    <div class="item" id="sub-3">
+                                        <p>CSDL Web</p>
+                                    </div>
+                                    <div class="item" id="sub-4">
+                                        <p>Lập trình hướng đối tưởng</p>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+                                <label>&nbsp;</label>
+                                <div class="btn-list">
+                                    <button type="button" class="btn btn-info btn-push-each">&gt;</button>
+                                    <button type="button" class="btn btn-info btn-push-all">&gt;&gt;</button>
+                                    <button type="button" class="btn btn-info btn-pop-each">&lt;</button>
+                                    <button type="button" class="btn btn-info btn-pop-all">&lt;&lt;</button>
+                                </div>
+                            </div>
+
+
+                            <div class="col-5">
+                                <label>Đã chọn:</label>
+                                <div class="registered">
+                                    <!--
+                                    <div class="item" id="reg-1">
+                                        <p><p>Trí tuệ nhân tạo</p></p>
+                                    </div>
+                                    <div class="item" id="reg-2">
+                                        <p>Lập trình nhúng</p>
+                                    </div>
+                                    <div class="item" id="reg-3">
+                                        <p>Xử lý ảnh</p>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row btn-list-2">
+                            <button type="button" class="btn btn-info" id="btn-regis">Đăng kí</button>
+                            <button type="button" class="btn btn-info" id="btn-showList">Xem danh sách</button>
+                            <button type="button" class="btn btn-info">Submit</button>
+                        </div>
+                            
+                    </div>
+                            
+                </form>
+            </div>
+            
+            <div class="student-info">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <th>Mã số</th> 
+                        <th>Họ tên</th> 
+                        <th>Giới tính</th> 
+                        <th>Ngày sinh</th>
+                    </tr>
+                    
+                    <!--
+                    `<tr>
+                        <td>1612426</td>
+                        <td>Hoàng Nghĩa</td>
+                        <td>Nam</td>
+                        <td>09/01/1998</td>
+                    </tr>`
+                    <tr>
+                        <td>1612426</td>
+                        <td>Hoàng Nghĩa</td>
+                        <td>Nam</td>
+                        <td>09/01/1998</td>
+                    </tr>
+                    -->
+                
+                </table>   
+            </div> 
+        </div>
+       
+    <div class="modal fade" id="exampleModal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Thông tin chi tiết</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modal-1">
+            <!-- Nội dung của modal -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Danh sách chi tiết</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Nội dung của modal -->
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Mã số</th> 
+                            <th>Họ tên</th> 
+                            <th>Giới tính</th> 
+                            <th>Ngày sinh</th>
+                            <th>Môn học</th>
+                        </tr>
+                    </thead>
+                    <tbody id="modal-2">
+                    
+                    </tbody>
+                </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <script src='app.js'></script>
+    </body>
+
+</html>

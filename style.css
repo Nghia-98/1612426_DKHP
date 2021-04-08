@@ -1,0 +1,124 @@
+
+h1 {
+    border-bottom: solid 1px #555;
+    width: 100%;
+    margin-bottom: 30px !important;
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto; 
+}
+
+.row {
+    margin: 0 auto !important;
+}
+
+label {
+    width: max-content;
+}
+
+.birth-date {
+    width: 300px;
+    justify-content: space-between;
+    float: left;
+}
+
+.date select {
+        width: 50px;
+    }
+.month select {
+        width: 50px;
+    }
+.year select {
+        width: 120px;
+    }
+
+
+input[name="maSo"],
+input[name="hoTen"] {
+    width: 300px;
+}
+
+.col-4 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subjects,
+.btn-list,
+.registered {
+    height: 220px;
+}
+
+.subjects {
+    border: solid #555 1px;
+}
+
+.registered {
+     border: solid #555 1px;
+}
+
+.btn-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.btn-list button {
+    width: 50%;
+}
+
+.registered {
+   
+}
+
+.btn-list-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 17px!important;
+}
+
+.btn-list-2 button {
+        margin-right: 8px;
+}
+
+.student-info {
+    margin-top: 22px!important;
+}
+
+.table td, .table th {
+    padding: 7px !important;
+}
+
+.item {
+    padding: 3px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item p {
+    margin: 0 6px;
+}
+
+.subjSelected {
+    background-color: darkcyan;
+}
+
+.modal-content {
+    width: 130% !important;
+}
+
+
+
